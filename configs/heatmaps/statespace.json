@@ -1,0 +1,24 @@
+{
+    "description":"basic statespace model",
+    "lr": 0.0001349,
+    "loss": "SSIMLoss",
+    "model": {
+        "name": "StateSpaceHeatmaps",
+        "in_ch": 17,
+        "enc_layers_ch": [64],
+        "rnn_kernel_size": [3,3],
+        "n_cells": 1,
+        "rnn_ch": 64,
+        "residual_step": true,
+        "n_seeds": 10,
+        "decoder_fixed_input": false
+    },
+    "data": {
+        "dataset": "heatmaps",
+        "train_file": "h36m_train.pkl",
+        "valid_file": "h36m_validation.pkl",
+        "n_seqs": 20,
+        "batch_size": 64,
+        "shuffle_data": true
+    }
+}

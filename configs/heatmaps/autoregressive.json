@@ -1,0 +1,24 @@
+{
+    "description":"basic autoregressive model",
+    "lr": 0.00856,
+    "loss": "SSIMLoss",
+    "model": {
+        "name": "AutoregressiveHeatmaps",
+        "in_ch": 17,
+        "enc_layers_ch": [32],
+        "rnn_kernel_size": [3,3],
+        "n_cells": 2,
+        "rnn_ch": 64,
+        "residual_step": true,
+        "n_seeds": 10,
+        "teacher_forcing_ratio": 0
+    },
+    "data": {
+        "dataset": "heatmaps",
+        "train_file": "h36m_train.pkl",
+        "valid_file": "h36m_validation.pkl",
+        "n_seqs": 20,
+        "batch_size": 32,
+        "shuffle_data": true
+    }
+}

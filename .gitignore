@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+.vscode/
+checkpoints/
+experiments/
+logs/
+*.error_
+*.out_
+*.pkl
+*.joblib
+data_folder/

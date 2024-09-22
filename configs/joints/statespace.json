@@ -1,0 +1,26 @@
+{
+    "description":"basic state space model",
+    "lr": 0.001344,
+    "loss": "L1Loss",
+    "model": {
+        "name": "StateSpace2dJoints",
+        "input_dim": 34,
+        "encoder_layers": [32],
+        "cell_type": "LSTM",
+        "n_cells": 2,
+        "rnn_dim": 32,
+        "residual_step": true,
+        "n_seeds": 10,
+        "decoder_fixed_input": false
+    },
+    "data": {
+        "dataset": "joints",
+        "train_file": "h36m_train.pkl",
+        "valid_file": "h36m_validation.pkl",
+        "s_fname": "scaler.joblib",
+        "s_type": "normalize",
+        "n_seqs": 20,
+        "batch_size": 64,
+        "shuffle_data": true
+    }
+}
